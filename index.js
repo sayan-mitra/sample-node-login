@@ -82,8 +82,9 @@ function getUser(id) {
       (err, response) => {
         if (err) {
           reject(err);
+          return;
         }
-        console.log(response.rows);
+        //console.log(response.rows);
         resolve(response.rows);
       }
     );
@@ -101,8 +102,9 @@ function updateUser(id) {
       (err, response) => {
         if (err) {
           reject(err);
+          return;
         }
-        console.log(response);
+        //console.log(response);
         resolve(response);
       }
     );
